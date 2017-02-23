@@ -4,17 +4,11 @@ console.log();
 var linea ="";
 var cuadrado = [];
 for(i = 0; i< largo; i++){
-  if(i===0 || i===largo-1){
-    for(j=0; j<largo; j++){
+  for(j=0; j< largo; j++){
+    if(i===0 || i===largo-1 || j===0 || j===largo-1){
       linea+="*";
-    }
-  }else{
-    for(j=0; j<largo; j++){
-      if(j===0 || j===largo-1){
-        linea+="*";
-      }else {
-        linea+=" ";
-      }
+    }else{
+      linea+=" ";
     }
   }
   console.log("Línea [" + (i+1) + "]   " + linea);
