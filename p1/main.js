@@ -6,4 +6,4 @@ do{
   }
 
 }while(ingreso != "fin");
-console.log(suma)
+alert("Suma" +suma);
